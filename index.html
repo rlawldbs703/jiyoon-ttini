@@ -6,7 +6,7 @@
 
     <meta
         name="viewport"
-        content="width=device-width, initial-scale=1.0"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
     >
 
     <title>지윤띠니</title>
@@ -27,6 +27,14 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+html, body, button {
+    touch-action: manipulation;
+}
+
+button, a, #jiyoon, .pet-hand {
+    -webkit-tap-highlight-color: transparent;
 }
 
 
@@ -190,7 +198,7 @@ body {
     left: 50%;
 
     transform:
-        translateX(20px);
+        translateX(-50%);
 
     width: 235px;
 
@@ -703,7 +711,7 @@ body {
         font-size: 13px;
 
         transform:
-            translateX(10px);
+            translateX(-50%);
 
     }
 
